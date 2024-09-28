@@ -1,0 +1,185 @@
+/* styles.css */
+:root {
+    --font-family: 'Verdana', sans-serif;
+    --heading-color: #4a7c8c;   /* М'який темно-блакитний */
+    --text-color: #6fbf9a;      /* Світлий зелений */
+    --link-color: #f4a261;      /* Пастельний помаранчевий */
+    --link-hover-color: #e76f51; /* Трохи темніший помаранчевий */
+    --background-color: #f0f4f8; /* Дуже світлий блакитний */
+    --card-bg-color: #e3f2fd;   /* Світло-блакитний */
+    --border-color: #d1d5db;     /* Легкий сірий */
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+header {
+    background-color: var(--heading-color);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--link-hover-color);
+}
+
+section#welcome {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+section#welcome h2 {
+    font-size: 2rem;
+    color: var(--heading-color);
+}
+
+blockquote {
+    font-style: italic;
+    color: var(--text-color);
+    border-left: 4px solid var(--link-color);
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+}
+
+blockquote cite {
+    display: block;
+    margin-top: 0.5rem;
+    color: var(--heading-color);
+    font-size: 1rem;
+}
+
+img {
+    width: 85%;
+    max-width: 80%;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+
+section#overview {
+    padding: 2rem;
+    background-color: var(--card-bg-color);
+    text-align: center;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem 0;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 a {
+    color: var(--heading-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.card h3 a:hover {
+    color: var(--link-color);
+}
+
+footer {
+    background-color: var(--heading-color);
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+/* Стилі для форми */
+form {
+    
+}padding: 1rem;
+    background-color: var(--card-bg-color);
+    border-radius: 10px;
+    margin: 1rem 0;
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: var(--link-color);
+    outline: none;
+    box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: var(--link-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--link-hover-color);
+}
+/* Збільшення зображень при наведенні */
+img:hover {
+    transform: scale(1.01);
+}
+
+/* Фіксований розмір зображень */
+img {
+    width: 40%; /* або інший вказаний розмір */
+}

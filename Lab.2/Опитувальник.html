@@ -1,0 +1,111 @@
+  <head>
+   <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитування про Чернівці</title>
+    
+</head>
+<body>
+ 
+ <main>
+ 
+<style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        .survey-container {
+            background-color: white;
+            padding: 97px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 95%;
+            max-width: 600px;
+        }
+        h1 {
+            color: #333;
+        }
+        label, input, select, textarea, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+        }
+        input, select, textarea {
+            padding: 10px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+        }
+        button {
+            padding: 28px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+	</style>
+</head>
+<body>
+    <div class="survey-container">
+        <h1>Опитування про Чернівці</h1>
+        <p><strong>Заповніть форму, вказавши Ваші враження від Чернівців:</strong></p>
+        <form action="/process-form" method="post">
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Ваш вік:</label>
+            <input type="number" id="age" name="age" required>
+			
+            <label>Чи відвідували ви Чернівці?</label>
+            <label><input type="radio" name="visit" value="yes" required> Так</label>
+            <label><input type="radio" name="visit" value="no"> Ні</label>
+			
+            <label for="favorite">Що вам найбільше сподобалося в Чернівцях?</label>
+            <textarea id="favorite" name="favorite" rows="4" placeholder="Ваша відповідь"></textarea>
+			
+            <label for="recommend">Чи порекомендуєте ви відвідати Чернівці іншим?</label>
+            <select id="recommend" name="recommend" required>
+                <option value="">Виберіть</option>
+                <option value="yes">Так</option>
+                <option value="no">Ні</option>
+            </select>
+            <label for="stay-duration">Скільки часу ви провели в Чернівцях?</label>
+            <input type="text" id="stay-duration" name="stay-duration" placeholder="Наприклад: 1 день, 2 тижні">
+			
+            <label>Як би ви оцінили транспортну інфраструктуру міста?</label>
+            <label><input type="radio" name="transport" value="excellent" required> Відмінно</label>
+            <label><input type="radio" name="transport" value="good"> Добре</label>
+            <label><input type="radio" name="transport" value="average"> Посередньо</label>
+            <label><input type="radio" name="transport" value="poor"> Погано</label>
+			
+            <label>Які місця в Чернівцях ви відвідали? (можна вибрати кілька варіантів)</label>
+            <label><input type="checkbox" name="places" value="university"> Чернівецький національний університет</label>
+            <label><input type="checkbox" name="places" value="square"> Центральна площа</label>
+            <label><input type="checkbox" name="places" value="museum"> Вірменська церква</label>
+            <label><input type="checkbox" name="places" value="park"> Площа Пресвятої Марії</label>
+            <label><input type="checkbox" name="places" value="theater"> Театр ім. О. Кобилянської</label>
+			<label><input type="checkbox" name="places" value="theater"> Площа Філармонії</label>
+			<label><input type="checkbox" name="places" value="theater"> Центральний парк культури і відпочинку імені Тараса Шевченка</label>
+			<label><input type="checkbox" name="places" value="theater"> Чернівецький художній музей</label>
+			
+            <label for="improvement">Що б ви хотіли покращити в Чернівцях?</label>
+            <textarea id="improvement" name="improvement" rows="4" placeholder="Ваша думка"></textarea>
+			
+			 <button type="submit">Надіслати</button>
+    </form>
+	
+ </section>
+		
+<a href = "index.html"> Повернутись </a>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мій рідний край - Чернівці.</p>
+    </footer> 
+</div>
+
+</body>
+</html>

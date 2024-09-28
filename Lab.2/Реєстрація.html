@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма реєстрації</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+
+        .login-container .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Стиль посилання для реєстрації */
+        .login-container a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+
+ <!-- Форма реєстрації -->
+    <div class="login-container">
+        <h2>Реєстрація</h2>
+   
+    <form action="/register" method="post">
+        <label for="regEmail">Електронна пошта:</label>
+        <input type="email" id="regEmail" name="regEmail" required>
+        <br>
+        <label for="regPassword">Пароль:</label>
+        <input type="password" id="regPassword" name="regPassword" minlength="8" required>
+        <br>
+        <label for="confirmPassword">Повторіть пароль:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" minlength="8" required>
+        <br>
+        <button type="reset">Очистити</button>
+        <button type="submit">Зареєструватися</button>
+    </form>
+    
+	
+<a href = "index.html"> Повернутись </a>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мій рідний край - Чернівці.</p>
+    </footer> 
+	
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+ <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма авторизації</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-container button:hover {
+            background-color: #45a049;
+        }
+
+        .login-container .error {
+            color: red;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Стиль посилання для реєстрації */
+        .login-container a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .login-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <h2>Авторизація</h2>
+
+        <!-- Форма авторизації -->
+        <form action="login.php" method="POST">
+		<label for="email">Електронна пошта:</label>
+        <input type="email" id="email" name="email" required>
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" placeholder="Введіть логін" required>
+
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" placeholder="Введіть пароль" required>
+
+            <!-- Додаткове поле: запам'ятати мене -->
+            <label>
+                <input type="checkbox" name="remember"> Запам'ятати мене
+            </label>
+			
+           <button type="reset">Очистити</button>
+            <!-- Відправка форми -->
+            <button type="submit">Увійти</button>
+        </form>
+
+        <!-- Повідомлення про помилку -->
+        <div class="error" id="errorMessage"></div>
+	
+    
+	
+<a href = "index.html"> Повернутись </a>
+       
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мій рідний край - Чернівці.</p>
+    </footer> 
+	
+	</div>
+
+</body>
+</html>
